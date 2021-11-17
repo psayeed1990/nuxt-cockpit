@@ -1,9 +1,6 @@
 <template>
   <div>
-    <p v-if="$fetchState.pending">Fetching posts...</p>
-    <p v-else-if="$fetchState.error">Error while fetching posts</p>
-
-    <div v-else class="posts">
+    <div class="posts">
       <div class="posts-list">
         <div v-for="post in posts" :key="post._id" :post="post">
           <a :href="'/posts/' + post._id"
