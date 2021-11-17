@@ -5,8 +5,10 @@
 
     <div v-else class="posts">
       <div class="posts-list">
-        <div v-for="post in posts" :key="post.id" :post="post">
-          <h1 class="post-title" v-html="post.title"></h1>
+        <div v-for="post in posts" :key="post._id" :post="post">
+          <a :href="'/posts/' + post._id"
+            ><h1 class="post-title" v-html="post.title"></h1
+          ></a>
           <h1 class="post-excerpt" v-html="post.excerpt"></h1>
 
           <h1 class="post-created">
