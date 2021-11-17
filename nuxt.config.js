@@ -1,8 +1,11 @@
+require("dotenv").config();
 export default {
   //config
   privateRuntimeConfig: {
-    postsURL: process.env.POSTS_URL,
-    baseURL: process.env.BASE_URL,
+    postsURL:
+      "http://qiezhtljvs.us09.fldrv.com/api/collections/get/posts?token=account-6f86f4d70b277853b92ed74df17c5d",
+    baseURL:
+      "http://qiezhtljvs.us09.fldrv.com/?token=account-6f86f4d70b277853b92ed74df17c5d",
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
