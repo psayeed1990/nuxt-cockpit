@@ -1,5 +1,6 @@
 require("dotenv").config();
 export default {
+  target: "static",
   //config
   privateRuntimeConfig: {
     postsURL:

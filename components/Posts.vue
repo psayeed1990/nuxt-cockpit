@@ -3,9 +3,11 @@
     <div class="posts">
       <div class="posts-list">
         <div v-for="post in posts" :key="post._id" :post="post">
-          <a :href="'/posts/' + post._id"
+          <!-- <a :href="'/posts/' + post._id"
             ><h1 class="post-title" v-html="post.title"></h1
-          ></a>
+          ></a> -->
+          <nuxt-link :to="`/posts/${post._id}`">{{ post.title }}</nuxt-link>
+
           <h1 class="post-excerpt" v-html="post.excerpt"></h1>
 
           <h1 class="post-created">
